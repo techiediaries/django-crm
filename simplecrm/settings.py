@@ -129,3 +129,9 @@ STATIC_URL = '/static/'
 CORS_ORIGIN_WHITELIST = (
     'localhost:4200',
 )
+
+REST_FRAMEWORK = {
+    "DEFAULT_PERMISSION_CLASSES": [
+        "rest_framework.permissions.IsAuthenticated",
+    ],
+}
